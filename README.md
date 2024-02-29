@@ -15,7 +15,7 @@
 
 3. **Dynamic Pricing Algorithms:** Online retailers frequently use dynamic pricing algorithms that adjust prices based on factors such as demand, time of day, and browsing history. This can lead to fluctuating prices and make it challenging for consumers to determine the optimal purchasing moment.
 
-- **Solution :** 
+## **Solution :** 
 **Empowering Shoppers:** Trackit empowers shoppers to make smarter purchasing decisions by providing comprehensive pricing information and real-time monitoring capabilities.
 
 **Facilitating Market Understanding:** Sellers can leverage Trackit to gain valuable insights into market trends and competitor pricing strategies, enabling them to optimize their pricing strategies for maximum competitiveness.
