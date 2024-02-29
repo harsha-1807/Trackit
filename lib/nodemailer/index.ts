@@ -1,5 +1,5 @@
 "use server";
-import nodemailer from "nodemailer";
+import nodeMailer from 'nodemailer';
 
 import { EmailContent, EmailProductInfo, NotificationType } from "@/types";
 
@@ -11,9 +11,12 @@ const Notification = {
 };
 
 export async function generateEmailBody(
+
   product: EmailProductInfo,
   type: NotificationType
+
 ) {
+
   const THRESHOLD_PERCENTAGE = 40;
   // Shorten the product title
   const shortenedTitle =
@@ -79,23 +82,23 @@ export async function generateEmailBody(
 
   return { subject, body };
 }
-const transporter = nodemailer.createTransport({
-  pool: true,
-  service: "hotmail",
-  port: 2525,
-  auth: {
-    user: process.env.EMAIL_ID,
-    pass: process.env.EMAIL_PASSWORD,
-  },
-  maxConnections: 1,
-});
+
+let config = {
+  service : 'gmail',
+  auth : {
+      user :process.env.EMAIL_ID,
+      pass :process.env.EMAIL_PASSWORD
+  }
+}
+
+const transporter = nodeMailer.createTransport(config);
 
 export const sendEmail = async (
   emailContent: EmailContent,
   sendTo: string[]
 ) => {
   const mailOptions = {
-    from: "",
+    from: process.env.EMAIL_ID,
     to: sendTo,
     html: emailContent.body,
     subject: emailContent.subject,
