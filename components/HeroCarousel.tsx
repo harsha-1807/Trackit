@@ -3,6 +3,7 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 const heroImages = [
   { imgUrl: "/assets/images/hero-1.svg", alt: "smart watch" },
@@ -23,14 +24,20 @@ const HeroCarousel = () => {
         showStatus={false}
       >
         {heroImages.map((image) => (
-          <Image
-            src={image.imgUrl}
-            alt={image.alt}
-            width={484}
-            height={484}
-            key={image.alt}
-            className="object-contain"
-          />
+          <CardContainer className="inter-var cursor-pointer">
+            <CardBody className="">
+              <CardItem translateZ="100" className="w-full mt-4">
+                <Image
+                  src={image.imgUrl}
+                  alt={image.alt}
+                  width={484}
+                  height={484}
+                  key={image.alt}
+                  className="object-contain rounded-xl group-hover/card:shadow-xl"
+                />
+              </CardItem>
+            </CardBody>
+          </CardContainer>
         ))}
       </Carousel>
       <Image
