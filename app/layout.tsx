@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -27,7 +28,6 @@ export default function RootLayout({
           <Navbar />
           <div className="mt-12">{children}</div>
         </main>
-        <Footer />
       </body>
     </html>
   );
