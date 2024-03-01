@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className="w-full flex items-center justify-center fixed top-5 inset-x-0  mx-auto z-50">
       <nav
-        className="nav mt-1 relative rounded-lg border-4 border-transparent 
+        className="nav mt-1 relative rounded-lg shadow-md shadow-[#905de88a] border-transparent 
       dark:bg-white/5 bg-opacity-60 h-16 w-[80vw] backdrop-filter backdrop-blur-xl dark:border-[#905de88a] bg-white shadow-input flex justify-center space-x-4 px-6 py-4"
       >
         <div className="flex justify-between items-center w-full text-[#905de8] font-semibold">
