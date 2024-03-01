@@ -22,8 +22,11 @@
 
 **Time and Cost Efficiency:** By streamlining the process of price analysis and comparison, Trackit saves users valuable time and helps them save money by ensuring they make purchases at the most opportune moments.
 
+### Email feature
+ **Price Drop Email Notifications:** Trackit now includes a feature that sends email notifications to users whenever the price of a tracked product drops below a certain threshold. This ensures that users never miss out on a good deal.
+
 ## [Flowchart link](https://www.figma.com/file/OPAQcVxZl2vNLwLWmdNR5H/TrackIt?type=whiteboard&node-id=5-91&t=CplOI00Dt1oRza5Z-0)
-<img src="./public/Flow chart.svg"> 
+<img src="./public/Flow chart.svg">
 
 ## Overview 
 The "Trackit" is a web application designed to provide users with information about the highest, lowest, and average prices of any product linked from any platform. Whether you're a savvy shopper looking for the best deal or a seller trying to gauge market trends, this tool can help you make informed decisions.
