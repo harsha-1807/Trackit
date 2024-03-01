@@ -6,6 +6,7 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 interface Props {
   image: string;
 }
+
 export function ThreeDCardDemo({ image }: Props) {
   return (
     <CardContainer className="inter-var">

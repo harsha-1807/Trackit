@@ -7,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   const { user, error, isLoading } = useUser();
 
-  if (isLoading) return <div>Loading...</div>;
+  // if (isLoading) return <div>Loading...</div>;
   if (error) return <div>{error.message}</div>;
 
 
@@ -18,7 +18,6 @@ const Navbar = () => {
           <nav className="nav mt-1 relative rounded-full border-4 border-transparent dark:bg-white/5 bg-opacity-60 h-16 w-[80vw] backdrop-filter backdrop-blur-xl dark:border-[#905de88a] bg-white shadow-input flex justify-center space-x-4 px-6 py-4">
             <div className="flex justify-between items-center w-full text-[#905de8] font-semibold">
               <Link href={"/"} className="flex items-center gap-1">
-                
                 <p className="text-2xl text-black font-bold">
                   Track
                   <span className="text-[#905DE8]"> It</span>
@@ -31,7 +30,7 @@ const Navbar = () => {
                 {user.name}
                   <div className="avatar">
                     <div className="w-24 rounded-full">
-                    <Image src={`${user.picture}`} alt="user" height={64} width={64}/>
+                    <Image src={`${user.picture}`} alt="user" height={48} width={48} className="rounded-full "/>
                     </div>
                   </div>
                 <Link href={"/api/auth/logout"}>Logout</Link>
@@ -40,8 +39,10 @@ const Navbar = () => {
           </nav>
         </header>
     );
-  }
-  <header className="w-full flex items-center justify-center fixed top-5 inset-x-0 mx-auto z-50">
+  }else{
+    return(
+      <>
+      <header className="w-full flex items-center justify-center fixed top-5 inset-x-0 mx-auto z-50">
       <nav className="nav mt-1 relative rounded-full border-4 border-transparent dark:bg-white/5 bg-opacity-60 h-16 w-[80vw] backdrop-filter backdrop-blur-xl dark:border-[#905de88a] bg-white shadow-input flex justify-center space-x-4 px-6 py-4">
         <div className="flex justify-between items-center w-full text-[#905de8] font-semibold">
           <Link href={"/"} className="flex items-center gap-1">
@@ -65,6 +66,10 @@ const Navbar = () => {
         </div>
       </nav>
     </header>
+      </>
+    )
+  }
+  
 }
 
 
