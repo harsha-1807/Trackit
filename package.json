@@ -18,7 +18,7 @@
     "framer-motion": "^11.0.8",
     "mongoose": "^8.2.0",
     "next": "14.1.0",
-    "nodemailer": "^6.9.10",
+    "nodemailer": "^6.9.11",
     "react": "^18",
     "react-dom": "^18",
     "react-responsive-carousel": "^3.2.23",
@@ -26,6 +26,7 @@
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
+    "@types/mongoose": "^5.11.97",
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.14",
     "@types/react": "^18",
@@ -34,5 +35,14 @@
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
-  }
+  },
+
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true
+    },
+    "types": ["mongoose"]
+  
 }
