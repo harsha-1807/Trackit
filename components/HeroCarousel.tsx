@@ -23,8 +23,8 @@ const HeroCarousel = () => {
         showArrows={false}
         showStatus={false}
       >
-        {heroImages.map((image) => (
-          <CardContainer className="inter-var cursor-pointer">
+        {heroImages.map((image, idx) => (
+          <CardContainer className="inter-var cursor-pointer" key={idx}>
             <CardBody className="">
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
