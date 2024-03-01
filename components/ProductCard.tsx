@@ -2,6 +2,7 @@ import { Product } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ThreeDCardDemo } from "./ThreeDCard";
 
 interface Props {
   product: Product;
@@ -10,16 +11,7 @@ interface Props {
 const ProductCard = ({ product }: Props) => {
   return (
     <Link href={`/products/${product._id}`} className="product-card">
-      <div>
-        <Image
-          src={product.image}
-          alt={product.title}
-          width={200}
-          height={200}
-          className="product-card_img"
-        />
-      </div>
-
+      <ThreeDCardDemo image={product.image} />
       <div className="flex flex-col gap-3">
         <h3 className="product-title">{product.title}</h3>
 
@@ -28,7 +20,7 @@ const ProductCard = ({ product }: Props) => {
             {product.category}
           </p>
 
-          <p className="text-black text-lg font-semibold">
+          <p className="text-black text-lg font-semibold px-4">
             <span>{product?.currency}</span>
             <span>{product?.currentPrice}</span>
           </p>
