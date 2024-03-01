@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex items-center justify-evenly w-[25vw] gap-4 text-[10px]  md:text-[15px]">
             <Link href={"/"}>Home</Link>
             <Link href={"#trending"}>Trending</Link>
-            <Link href={"/"}>About Us</Link>
+            <Link href={"/aboutus"}>About Us</Link>
             <Link href={"/"}>Log In / Sign up</Link>
           </div>
         </div>
