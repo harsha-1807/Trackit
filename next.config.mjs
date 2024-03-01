@@ -9,6 +9,7 @@ const nextConfig = {
       "m.media-amazon.com",
       "assets.aceternity.com",
       "images.unsplash.com",
+      "lh3.googleusercontent.com"
     ],
   },
 };

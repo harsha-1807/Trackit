@@ -5,6 +5,7 @@ import SearchBar from "@/components/Searchbar";
 import Image from "next/image";
 import { getAllProducts } from "@/lib/actions";
 import ProductCard from "@/components/ProductCard";
+import { TypewriterEffectSmooth1 } from "@/components/TypeWriteNav";
 
 const Home = async () => {
   const allProducts = await getAllProducts();
@@ -23,9 +24,12 @@ const Home = async () => {
                 height={16}
               />
             </p>
-            <h1 className="head-text">
+            {/* <h1 className="head-text">
               Unleash the Power of
               <span className="text-[#905DE8]"> Track It</span>
+            </h1> */}
+            <h1 className="head-text">
+              <TypewriterEffectSmooth1 />
             </h1>
             <p className="mt-6">
               Powerful, self-serve product and growth analytics to help you
