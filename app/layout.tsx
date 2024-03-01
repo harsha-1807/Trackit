@@ -25,10 +25,8 @@ export default function RootLayout({
       <UserProvider>  
         <body className={inter.className}>
             <main className="max-w-10xl mx-auto">
-                
                   <Navbar />
-                  {children}
-                
+                  <div className="mt-12">{children}</div>
             </main>
         </body>
       </UserProvider>
