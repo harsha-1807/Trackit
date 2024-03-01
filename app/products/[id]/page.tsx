@@ -141,7 +141,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                 value={`${product.currency} ${formatNumber(
                   product.highestPrice
                 )}`}
-                borderColor={"#FCCFC3"}
+                borderColor={"#ff6666"}
               />
               <PriceInfo
                 title={"Lowest Price"}
